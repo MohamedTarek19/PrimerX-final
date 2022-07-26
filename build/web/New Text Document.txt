@@ -1,0 +1,9 @@
+<%String Sequence = (String)request.getParameter("input-sequence"); 
+                        for(int i = 0 ; i< Sequence.length();i++){
+                            if(Sequence.charAt(i) == '[' ||Sequence.charAt(i) == ']'){
+                                %>
+                            <mark><%= Sequence.charAt(i)%></mark>
+                            <%}else{%>
+                                <%= Sequence.charAt(i)%>
+                            <%}
+                        }%>
